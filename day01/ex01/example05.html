@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<style>
+    .table_header { text-align: center;
+                    background-color: #5C750C;}  
+    .table_td { text-align:center;}
+</style>
+    <title>Document</title>
+</head>
+<body>
+<div class="top" style="margin-top:20px;">
+<div class="bs-example" data-example-id="inverted-navbar"> <nav class="navbar navbar-inverse"> <div class="container-fluid"> <div class="navbar-header"> <button type="button" class="collapsed navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-9" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a href="#" class="navbar-brand">Node.js</a> </div> <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-9"> <ul class="nav navbar-nav"> <li class="active"><a href="#">Home</a></li> <li><a href="#">Link</a></li> <li><a href="#">Study</a></li> </ul> </div> </div> </nav> </div>
+</div>
+   <div class="container">
+        <table class="table table-bordered table-hover" style="margin-top:50px;">
+            <tr >
+                <th class="table_header">제목</th>
+                <th class="table_header">내용</th>
+                <th class="table_header">삭제</th>
+            </tr>
+            <tr class="success">
+                <td class="table_td">오늘의 날씨</td>
+                <td class="table_td">비</td>
+                <td class="table_td"><a href="#" class="btn btn-danger" >삭제</a></td>
+            </tr>
+            <tr class="active">
+                <td class="table_td">내일의 날씨</td>
+                <td class="table_td">비</td>
+                <td class="table_td"><a href="#" class="btn btn-danger" >삭제</a></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

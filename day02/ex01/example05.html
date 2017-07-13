@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script
+  src="http://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link ref="./example05.css" >
+  <script src="./example05.js"></script>
+
+    <title>폼 검증</title>
+</head>
+<body>
+    <div class="container">
+        <form action="" method="post" id="testForm">
+            <table class="table table-bordered">
+                <tr>
+                    <th>제목</th>
+                    <td><input type="text" name="subject" class="form-control"></td>
+                </tr>
+                <tr>
+                    <th>이메일</th>
+                    <td><input type="text" name="email" class="form-control"></td>
+                </tr>
+                <tr>
+                    <th>지역</th>
+                    <td>
+                        <select name="division" id="" class="form-control">
+                            <option value="">선택하세요</option>
+                            <option value="서울">서울</option>
+                            <option value="수원">수원</option>
+                            <option value="인천">인천</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>내용</th>
+                    <td>
+                        <textarea name="content" id="contentText" id="" cols="30" rows="10" class="form-control"></textarea>
+                    </td>
+                </tr>
+            </table>
+            <button class="btn btn-primary">작성하기</button>
+        </form>
+    </div>
+</body>
+</html>

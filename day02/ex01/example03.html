@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>자바스크립트 프로토타입</title>
+</head>
+<script>
+    function Car(name){
+        this.name = name;
+    }
+
+    function Car2(){
+        this.name = "super name";
+        this.showName = function(){
+            console.log(this.name + " is print");
+        }
+    }
+    function Taxi(){
+        var _super = new Car();
+        _super.name = "taxi name";
+        return _super;
+    }
+    var myTaxi = new Taxi();
+    myTaxi.showName();
+
+    console.log(myTaxi instanceof Car);
+    //True
+    console.log(myTaxi instanceof Taxi);
+    //False
+
+    /* Taxi의 인스턴스로 선언을 했지만
+        Car의 인스턴스로 인식함
+    */
+
+    Car.prototype.move = function(){
+        console.log(this.name  + " is move");
+    };
+
+    var myCar = new Car("AAA");
+    myCar.move();
+    
+    
+</script>
+<body>
+    
+</body>
+</html>

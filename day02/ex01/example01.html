@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>자바스크립트 연습</title>
+</head>
+<script src="//code.jquery.com/jquery.min.js"></script>
+<script type=text/javascript>
+    var a = 10; // 숫자형
+    var b = "자바스크립트"; // 문자형
+    var c = true; // boolean
+    var d ; 
+    
+    var arr = new Array();
+    arr[0] = 1;
+    arr[1] = 2;
+    arr[2] = 3;
+    
+    var arr2 = new Array(1,2,3);
+    
+    var arr3 = [1,2,3];
+    
+    // 초기화
+    var arr4 = new Array();
+    var arr5 = [];
+    
+    console.log("typeof(d) : " + typeof(d)); // undefined
+    console.log("arr[] : " + arr);
+    console.log("arr2[] : " + arr2);
+    console.log("arr3[] : " + arr3);
+    console.log("arr4[] : " + arr4);
+    console.log("arr5[] : " + arr5);
+    
+    for(var i=0; i<arr.length;i++) {
+        console.log(arr[i]);
+    }
+    
+    for(var key in arr) {
+        console.log("arr" + arr[key]);
+    }
+    
+    var aa = {
+        numberVal : 10,
+        arrayVal : "abc",
+        arrayList : [1,2,3],
+        speack : function() {
+            console.log("function");
+        }
+    };
+    
+    console.log("######### aa print");
+    $.each(arr, function(idx, data) {
+       console.log(idx + " " + data); 
+    });
+    
+    var bb = {
+        num : 10
+    }
+    bb.count = 5;
+    // 프로토타입 jquery 확장에 용이함.
+    
+    console.log("bb.count : " + bb.count);
+    
+    console.log("######### aa print");
+    for(var property in aa) {
+        console.log(property + "/" + a[property]);
+    }
+    
+    function fnExample01(name, age) {
+        this.name = name;
+        this.age = age;
+        var privateVal = "private 변수";
+        this.publicVal = privateVal; // 공용변수
+    }
+    var myTest = new fnExample01("J",20);
+    console.log(myTest.name);
+    console.log(myTest.publicVal);
+    
+    
+</script>
+<body>
+    <div id="printdiv"></div>
+</body>
+</html>
