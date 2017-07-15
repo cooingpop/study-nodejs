@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 프로토타입
+        function Car() {
+
+        }
+        var myCar = new Car();
+        // 참조하는 관계(순환구조)
+        // function Car <-> prototype <-> myCar
+        console.log(Car.prototype);
+        //생성자가 생성되면 프로토타입도 자동적으로 생성됨
+    </script>
+</body>
+</html>

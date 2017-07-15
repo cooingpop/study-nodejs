@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 메서드 체이닝
+        function a() {
+            console.log("call a");
+            return this; // 함수를 이어서 사용 가능 메서드 체이닝
+        }
+        function b(){
+            console.log("call b");
+            return this;
+        }
+
+        console.log(a().b());
+    </script>
+</body>
+</html>

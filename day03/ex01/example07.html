@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var account = {
+            id : "",
+            password : "",
+            setId : function(myId) {
+                this.id = myId;
+                return this;
+            },
+            setPassword : function(myPassword) {
+                this.password = myPassword;
+                return this;
+            },
+            print : function() {
+                console.log("id : " + this.id);
+                console.log("password : " + this.password);
+            }
+        };
+
+        account.setId("admin").setPassword("1234");
+        account.print();
+        
+    </script>
+</body>
+</html>

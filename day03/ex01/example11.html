@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Car() { }
+            var myCar1 = new Car();  //Car의 prototype을 참조함
+            var myCar2 = new Car();  //Car의 prototype을 참조함
+            var myCar3 = new Car();  //Car의 prototype을 참조함
+
+            Car.prototype.color = "red";
+            console.log(myCar1.color);
+            console.log(myCar2.color);
+            console.log(myCar3.color);
+            //myCar1, myCar2, myCar3이 같은 protype을 참조하므로 red 출력
+
+        </script>
+</body>
+</html>
